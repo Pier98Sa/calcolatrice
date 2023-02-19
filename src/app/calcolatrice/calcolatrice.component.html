@@ -1,0 +1,91 @@
+<div class="container w-50 calc">
+
+  <div class="row">
+    <div class="col py-3">
+      <input type="text" [value]="memoValue" id="prova" class="w-100 py-3" readonly>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col py-3">
+      <input type="text" [value]="displayValue" id="prova" class="w-100 py-3" readonly>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 py-3">
+      <input type="button" value="7" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="8" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="9" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="+" (click)="clickOperation($event)" class="w-100 btn btn-secondary" [disabled]="blockOperation ? true : false ">
+    </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="col-3 py-3">
+        <input type="button" value="4" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+        <input type="button" value="5" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+        <input type="button" value="6" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="-" (click)="clickOperation($event)" class="w-100 btn btn-secondary" [disabled]="blockOperation ? true : false ">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 py-3">
+      <input type="button" value="1" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="2" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="3" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="*" (click)="clickOperation($event)" class="w-100 btn btn-secondary" [disabled]="blockOperation ? true : false ">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 py-3">
+      <input type="button" value="CLR" (click)="cancelAll()" class="w-100 btn btn-danger" >
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="0" (click)="clickButton($event)" class="w-100 btn btn-outline-secondary">
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="=" (click)="clickButton($event)" class="w-100 btn btn-primary " [disabled]="blockEqual ? true : false " >
+    </div>
+
+    <div class="col-3 py-3">
+      <input type="button" value="/" (click)="clickOperation($event)" class="w-100 btn btn-secondary" [disabled]="blockOperation ? true : false ">
+    </div>
+  </div>
+
+
+</div>
+
